@@ -78,6 +78,8 @@ public class FizzBuzz
         {
             if (j == 0)
                 listaDeSalida.Add("0");
+            else if (j % 3 == 0 && j % 5 == 0)
+                listaDeSalida.Add("FizzBuzz");
             else if (j % 3 == 0)
                 listaDeSalida.Add("Fizz");
             else if (j % 5 == 0)
