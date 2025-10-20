@@ -37,11 +37,15 @@ public class FizzBuzzTest
 
 public class FizzBuzz
 {
-    public List<string> Calcular(int i)
+    public List<string> Calcular(int numero)
     {
-        return new List<string>
+        var listaDeSalida = new List<string>();
+        
+        for (int j = 0; j <= numero; j++)
         {
-            "0"
-        };
+            listaDeSalida.Add(j.ToString());
+        }
+        
+        return listaDeSalida;
     }
 }
