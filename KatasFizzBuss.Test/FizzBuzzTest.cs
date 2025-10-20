@@ -52,7 +52,22 @@ public class FizzBuzz
         
         for (int j = 0; j <= numero; j++)
         {
-            listaDeSalida.Add(j.ToString());
+            if (j == 0)
+            {
+                listaDeSalida.Add("0");
+            }
+            else
+            {
+                if (j % 3 == 0)
+                {
+                    listaDeSalida.Add("Fizz");
+                }
+                else
+                {
+                    listaDeSalida.Add(j.ToString());
+                }
+            }
+
         }
         
         return listaDeSalida;
