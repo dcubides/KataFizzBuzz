@@ -3,6 +3,5 @@
 - [x] Si el numero es tres mostrar Fizz
 - [ ] Si el numero es cuatro mostrar cuatro //no se realiza ya que es la misma logica de uno y dos
 - [x] Si el numero es cinco mostrar Buzz
-- [ ] Si el numero es quince mostrar FizzBuzz
-- [ ] Si el numero es seis mostrar Fizz
-- [ ] Si el numero es diez mostrar Buzz
+- [x] Si el numero es quince mostrar FizzBuzz
+- [x] Si el numero es diez mostrar Buzz

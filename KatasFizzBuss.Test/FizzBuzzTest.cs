@@ -1,59 +1,12 @@
-﻿using FluentAssertions;
+﻿using System.Collections;
+using FluentAssertions;
 
 namespace KatasFizzBuss.Test;
 
 public class FizzBuzzTest
 {
     private readonly FizzBuzz _fizzBuzz= new();
-    [Fact]
-    public void Si_NumeroEsCero_Debe_RetornarCero()
-    {
-        var esperado = new List<string>
-        {
-            "0"
-        };
-
-        var resultado = _fizzBuzz.Calcular(0);
-
-        resultado.Should().Equal(esperado);
-    }
-
-    [Fact]
-    public void Si_NumeroesUno_Debe_RetornarUno()
-    {
-        var esperado = new List<string>
-        {
-            "0", "1"
-        };
-        
-        var resultado = _fizzBuzz.Calcular(1);
-        resultado.Should().Equal(esperado);
-    }
-
-    [Fact]
-    public void Si_NumeroEsTres_Debe_RetornarFizz()
-    {
-        var esperado = new List<string>
-        {
-            "0", "1", "2", "Fizz"
-        };
-        
-        var resultado = _fizzBuzz.Calcular(3);
-        resultado.Should().Equal(esperado);
-    }
-
-    [Fact]
-    public void Si_NumeroEsCinco_Debe_retornarBuzz()
-    {
-        var esperado = new List<string>
-        {
-            "0", "1", "2", "Fizz", "4", "Buzz"
-        };
-        
-        var resultado = _fizzBuzz.Calcular(5);
-        resultado.Should().Equal(esperado);
-    }
-
+   
     [Fact]
     public void Si_NumeroEsQuince_Debe_retornarFizzBuzz()
     {
@@ -65,8 +18,36 @@ public class FizzBuzzTest
         var resultado = _fizzBuzz.Calcular(15);
         resultado.Should().Equal(esperado);
     }
+    
+    [Theory]
+    [ClassData(typeof(FizzBussTestDatos))]
+    public void Si_IngresaNumeros_RetornarMetodoFizzBuzz(int numero, List<string> esperado)
+    {
+        var resultado = _fizzBuzz.Calcular(numero);
+        
+        resultado.Should().Equal(esperado);
+    }
 }
 
+public class FizzBussTestDatos: IEnumerable<object[]>
+{
+    public IEnumerator<object[]> GetEnumerator()
+    {
+        yield return new object[] { 0, new List<string> { "0" } };
+        yield return new object[] { 1, new List<string> { "0","1" } };
+        yield return new object[] { 2, new List<string> { "0","1","2" } };
+        yield return new object[] { 3, new List<string> { "0","1","2","Fizz" } };
+        yield return new object[] { 4, new List<string> { "0","1","2","Fizz","4" } };
+        yield return new object[] { 5, new List<string> { "0","1","2","Fizz","4", "Buzz" } };
+        yield return new object[] { 10, new List<string> { "0", "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz" } };
+        yield return new object[] { 15, new List<string> {  "0", "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz",  "13", "14", "FizzBuzz"  } };
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+}
 
 public class FizzBuzz
 {
