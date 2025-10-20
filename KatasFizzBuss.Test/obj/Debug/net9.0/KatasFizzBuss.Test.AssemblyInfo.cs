@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KatasFizzBuss.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13e9b8bb6abc75e04f899329f49fbda86cfa0f3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58a33d945a58f9cc685d66b935fd08fb79871b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("KatasFizzBuss.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KatasFizzBuss.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

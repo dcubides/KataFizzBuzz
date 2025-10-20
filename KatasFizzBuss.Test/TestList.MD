@@ -1,6 +1,5 @@
-- [ ] Si el numero es cero debe devolver cero
-- [ ] Si el numero es Uno Mostrar Uno
-- [ ] Si el numero es Dos mostrar Dos
+- [x] Si el numero es cero debe devolver cero
+- [x] Si el numero es Uno Mostrar Uno
 - [ ] Si el numero es tres mostrar Fizz
 - [ ] Si el numero es cuatro mostrar cuatro
 - [ ] Si el numero es cinco mostrar Buzz
