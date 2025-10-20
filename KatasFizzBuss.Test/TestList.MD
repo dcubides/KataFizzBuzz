@@ -1,7 +1,7 @@
 - [x] Si el numero es cero debe devolver cero
 - [x] Si el numero es Uno Mostrar Uno
-- [ ] Si el numero es tres mostrar Fizz
-- [ ] Si el numero es cuatro mostrar cuatro
+- [x] Si el numero es tres mostrar Fizz
+- [ ] Si el numero es cuatro mostrar cuatro //no se realiza ya que es la misma logica de uno y dos
 - [ ] Si el numero es cinco mostrar Buzz
 - [ ] Si el numero es seis mostrar Fizz
 - [ ] Si el numero es diez mostrar Buzz

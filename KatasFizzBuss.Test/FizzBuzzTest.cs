@@ -31,7 +31,7 @@ public class FizzBuzzTest
     }
 
     [Fact]
-    public void Si_NumeroEsTres_Debe_RetornarTres()
+    public void Si_NumeroEsTres_Debe_RetornarFizz()
     {
         var esperado = new List<string>
         {
@@ -39,6 +39,18 @@ public class FizzBuzzTest
         };
         
         var resultado = _fizzBuzz.Calcular(3);
+        resultado.Should().Equal(esperado);
+    }
+
+    [Fact]
+    public void Si_NumeroEsCinco_Debe_retornarBuzz()
+    {
+        var esperado = new List<string>
+        {
+            "0", "1", "2", "Fizz", "4", "Buzz"
+        };
+        
+        var resultado = _fizzBuzz.Calcular(5);
         resultado.Should().Equal(esperado);
     }
 }
