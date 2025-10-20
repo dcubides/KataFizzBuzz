@@ -16,14 +16,17 @@ public class FizzBuzzTest
 
         var resultado = FizzBuzz.Calcular(0);
 
-        resultado.Should().Be(esperado);
+        resultado.Should().Equal(esperado);
     }
 }
 
 public class FizzBuzz
 {
-    public object Calcular(int i)
+    public List<string> Calcular(int i)
     {
-        throw new NotImplementedException();
+        return new List<string>
+        {
+            "0"
+        };
     }
 }

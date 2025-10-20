@@ -97,3 +97,4 @@ C:\Users\DAVID.CUBIDES\Documents\Cursos\CursoXUnitUdemy\Katas\KatasFizzBuss.Test
 C:\Users\DAVID.CUBIDES\Documents\Cursos\CursoXUnitUdemy\Katas\KatasFizzBuss.Test\obj\Debug\net9.0\KatasFizzBuss.Test.pdb
 C:\Users\DAVID.CUBIDES\Documents\Cursos\CursoXUnitUdemy\Katas\KatasFizzBuss.Test\obj\Debug\net9.0\KatasFizzBuss.Test.genruntimeconfig.cache
 C:\Users\DAVID.CUBIDES\Documents\Cursos\CursoXUnitUdemy\Katas\KatasFizzBuss.Test\obj\Debug\net9.0\ref\KatasFizzBuss.Test.dll
+C:\Users\DAVID.CUBIDES\Documents\Cursos\CursoXUnitUdemy\Katas\KatasFizzBuss.Test\obj\Debug\net9.0\KatasFizzBuss.Test.sourcelink.json
