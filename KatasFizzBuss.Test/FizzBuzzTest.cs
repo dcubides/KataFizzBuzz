@@ -76,7 +76,15 @@ public class FizzBuzz
                 }
                 else
                 {
-                    listaDeSalida.Add(j.ToString());
+                    if (j % 5 == 0)
+                    {
+                        listaDeSalida.Add("Buzz");
+                    }
+                    else
+                    {
+                        listaDeSalida.Add(j.ToString());
+                    }
+
                 }
             }
 
