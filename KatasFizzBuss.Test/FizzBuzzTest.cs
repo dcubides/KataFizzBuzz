@@ -18,7 +18,22 @@ public class FizzBuzzTest
 
         resultado.Should().Equal(esperado);
     }
+
+    [Fact]
+    public void Si_NumeroesUno_Debe_RetornarUno()
+    {
+        var  FizzBuzz = new FizzBuzz();
+        
+        var esperado = new List<string>
+        {
+            "0", "1"
+        };
+        
+        var resultado = FizzBuzz.Calcular(1);
+        resultado.Should().Equal(esperado);
+    }
 }
+
 
 public class FizzBuzz
 {
