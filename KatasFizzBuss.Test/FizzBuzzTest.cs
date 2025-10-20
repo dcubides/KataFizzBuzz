@@ -65,29 +65,13 @@ public class FizzBuzz
         for (int j = 0; j <= numero; j++)
         {
             if (j == 0)
-            {
                 listaDeSalida.Add("0");
-            }
+            else if (j % 3 == 0)
+                listaDeSalida.Add("Fizz");
+            else if (j % 5 == 0)
+                listaDeSalida.Add("Buzz");
             else
-            {
-                if (j % 3 == 0)
-                {
-                    listaDeSalida.Add("Fizz");
-                }
-                else
-                {
-                    if (j % 5 == 0)
-                    {
-                        listaDeSalida.Add("Buzz");
-                    }
-                    else
-                    {
-                        listaDeSalida.Add(j.ToString());
-                    }
-
-                }
-            }
-
+                listaDeSalida.Add(j.ToString());
         }
         
         return listaDeSalida;
