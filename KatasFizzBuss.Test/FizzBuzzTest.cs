@@ -53,6 +53,18 @@ public class FizzBuzzTest
         var resultado = _fizzBuzz.Calcular(5);
         resultado.Should().Equal(esperado);
     }
+
+    [Fact]
+    public void Si_NumeroEsQuince_Debe_retornarFizzBuzz()
+    {
+        var esperado = new List<string>
+        {
+            "0", "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz",  "13", "14", "FizzBuzz" 
+        };
+        
+        var resultado = _fizzBuzz.Calcular(15);
+        resultado.Should().Equal(esperado);
+    }
 }
 
 
